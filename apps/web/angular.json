@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "classroom-web": {
+    "icourses-web": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
@@ -26,8 +26,8 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": { "buildTarget": "classroom-web:build:production" },
-            "development": { "buildTarget": "classroom-web:build:development", "proxyConfig": "proxy.conf.json" }
+            "production": { "buildTarget": "icourses-web:build:production" },
+            "development": { "buildTarget": "icourses-web:build:development", "proxyConfig": "proxy.conf.json" }
           },
           "defaultConfiguration": "development"
         }

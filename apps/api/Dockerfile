@@ -6,10 +6,10 @@ COPY package-lock.json ./
 COPY packages/shared/package.json packages/shared/package.json
 COPY apps/api/package.json apps/api/package.json
 COPY apps/web/package.json apps/web/package.json
-RUN npm ci --workspace @classroom/api --workspace @classroom/shared
+RUN npm ci --workspace icourses-api --workspace @icourses/shared
 COPY packages/shared packages/shared
 COPY apps/api apps/api
-RUN npm run db:generate --workspace @classroom/api && npm run build --workspace @classroom/api
+RUN npm run db:generate --workspace icourses-api && npm run build --workspace icourses-api
 
 FROM node:22.23.1-bookworm-slim AS runtime
 RUN apt-get update && apt-get install -y --no-install-recommends openssl && rm -rf /var/lib/apt/lists/*

@@ -1,5 +1,5 @@
 {
-  "name": "ai-classroom-platform",
+  "name": "icourses",
   "type": "module",
   "private": true,
   "version": "0.1.0",
@@ -11,9 +11,9 @@
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
-    "db:generate": "npm run db:generate -w @classroom/api",
-    "db:migrate": "npm run db:migrate -w @classroom/api",
-    "db:seed": "npm run db:seed -w @classroom/api"
+    "db:generate": "npm run db:generate -w icourses-api",
+    "db:migrate": "npm run db:migrate -w icourses-api",
+    "db:seed": "npm run db:seed -w icourses-api"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",

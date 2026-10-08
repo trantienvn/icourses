@@ -9,7 +9,7 @@ import { logger } from './observability/logger.js';
 
 const openApiSpec = {
   openapi: '3.1.0',
-  info: { title: 'Classroom API', version: '1.0.0', description: 'API quản lý lớp học và thi trực tuyến.' },
+  info: { title: 'ICourses API', version: '1.0.0', description: 'API quản lý lớp học và thi trực tuyến.' },
   servers: [{ url: '/api/v1' }],
   paths: {
     '/health': {

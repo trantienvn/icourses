@@ -1,5 +1,5 @@
 {
-  "name": "@classroom/api",
+  "name": "icourses-api",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,7 +17,7 @@
   },
   "prisma": { "seed": "dotenv -e ../../.env -- tsx prisma/seed.ts" },
   "dependencies": {
-    "@classroom/shared": "*",
+    "@icourses/shared": "*",
     "@prisma/client": "^6.19.0",
     "argon2": "^0.44.0",
     "bullmq": "^5.58.0",

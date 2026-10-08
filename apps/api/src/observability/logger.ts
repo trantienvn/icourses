@@ -3,6 +3,6 @@ import pino from 'pino';
 export const logger = pino({
   level: process.env.LOG_LEVEL ?? 'info',
   redact: { paths: ['req.headers.authorization', 'req.headers.cookie', 'password', 'token', 'apiKey'], censor: '[REDACTED]' },
-  base: { service: 'classroom-api' },
+  base: { service: 'icourses-api' },
   timestamp: pino.stdTimeFunctions.isoTime,
 });
