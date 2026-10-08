@@ -1,5 +1,6 @@
 {
   "name": "ai-classroom-platform",
+  "type": "module",
   "private": true,
   "version": "0.1.0",
   "packageManager": "npm@10.9.8",
