@@ -10,12 +10,12 @@
     "lint": "eslint src prisma/seed.ts --max-warnings=0",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "vitest run --passWithNoTests",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate deploy",
-    "db:migrate:dev": "prisma migrate dev",
-    "db:seed": "tsx prisma/seed.ts"
+    "db:generate": "dotenv -e ../../.env -- prisma generate",
+    "db:migrate": "dotenv -e ../../.env -- prisma migrate deploy",
+    "db:migrate:dev": "dotenv -e ../../.env -- prisma migrate dev",
+    "db:seed": "dotenv -e ../../.env -- tsx prisma/seed.ts"
   },
-  "prisma": { "seed": "tsx prisma/seed.ts" },
+  "prisma": { "seed": "dotenv -e ../../.env -- tsx prisma/seed.ts" },
   "dependencies": {
     "@classroom/shared": "*",
     "@prisma/client": "^6.19.0",
@@ -23,6 +23,7 @@
     "bullmq": "^5.58.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
     "express-rate-limit": "^8.1.0",
     "helmet": "^8.1.0",
@@ -43,6 +44,7 @@
     "@types/supertest": "^6.0.3",
     "@types/swagger-ui-express": "^4.1.8",
     "eslint": "^9.0.0",
+    "dotenv-cli": "^10.0.0",
     "supertest": "^7.1.4",
     "tsx": "^4.20.5",
     "typescript": "^6.0.0",
