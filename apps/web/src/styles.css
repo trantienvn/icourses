@@ -1,0 +1,4 @@
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+
+html, body { min-height: 100%; }
+body { margin: 0; background: #f4f7fb; color: #15243b; font-family: Roboto, "Segoe UI", sans-serif; }

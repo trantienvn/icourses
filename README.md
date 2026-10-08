@@ -19,7 +19,9 @@ npm run dev --workspace @classroom/api
 npm run start --workspace @classroom/web
 ```
 
-The API health endpoint is `http://localhost:3000/api/v1/health`; Angular runs on port 4200. Postgres and Redis can also be run through Compose while developing the apps directly on the host.
+Before running the seed, set `BOOTSTRAP_ADMIN_EMAIL`, `BOOTSTRAP_ADMIN_PASSWORD`, and `SEED_DEMO_PASSWORD` in `.env`; seed passwords must be at least 12 characters. The seed creates one admin, two teachers, thirty students, and a sample class, question, and exam. The demo teacher/student accounts use `SEED_DEMO_PASSWORD` and require a password change on first login.
+
+With Compose, the API health endpoint is `http://localhost/api/v1/health` and API docs are at `http://localhost/api/docs`. For host-based development, Angular runs on port 4200 and `.env` allows that origin. Postgres and Redis can also be run through Compose while developing the apps directly on the host; set `COMPOSE_WEB_ORIGIN` if the Compose site uses a different origin.
 
 ## Workspace
 
